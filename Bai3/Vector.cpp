@@ -63,16 +63,16 @@ void Vector::Show()
 //         exit(0);
 //     return this->p[index];
 // }
-double &Vector::operator+(Vector &v)
-{
+// double &Vector::operator+(Vector &v)
+// {
 
-    for (int i = 0; i < v.length; i++)
-    {
-        sum += *(v.p + i);
-    }
-    return sum;
-}
-double &Vector::operator-(Vector &v)
-{
-    double
-}
+//     for (int i = 0; i < v.length; i++)
+//     {
+//         sum += *(v.p + i);
+//     }
+//     return sum;
+// }
+// double &Vector::operator-(Vector &v)
+// {
+//     double
+// }

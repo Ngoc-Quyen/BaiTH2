@@ -10,7 +10,7 @@ Matrix::Matrix(int row, int col, int t)
         *(this->mt + i) = new double[this->col];
         for (int j = 0; j < this->col; j++)
         {
-            *(*(this->mt + j)) = t;
+            *(*(this->mt + i) + j) = t;
         }
     }
 }
@@ -55,12 +55,12 @@ istream &operator>>(istream &in, Matrix &m)
 }
 ostream &operator<<(ostream &out, Matrix m)
 {
-    out << "\tMa tran:\n";
+    out << "Ma tran:\n";
     for (int i = 0; i < m.row; i++)
     {
         for (int j = 0; j < m.col; j++)
         {
-            cout << *(*(m.mt + i) + j);
+            cout << *(*(m.mt + i) + j) << " ";
         }
         out << '\n';
     }
